@@ -3,18 +3,16 @@
         <Banner />
         <Search />
         <div class="grid md:grid-cols-2 lg:grid-cols-4 sm:grid-cols-1 justify-items-center">
-           <div v-for="movie in 8">
-            <MoviePoster :movieid="movieid" :title="title" :date="date" :poster="poster" />
+           <div v-for="movie in movies.results">
+            <MoviePoster :movieid="movie.id" :title="movie.title" :date="movie.release_date" :poster="movie.poster_path" />
             </div> 
         </div>
     </div>
 </template>
 
 <script setup>
-    const movieid = ref(1);
-    const title = ref("X FAST");
-    const date = ref("3 june, 2023");
-    const poster = ref("https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg");
+    const {data:movies, error} = await useFetch("http://api.themoviedb.org/3/movie/now_playing?api_key=135e910b71d49a040b1b680c82e244e6") 
+    console.log("movies:", movies)
 </script>
 
 <style scoped>
