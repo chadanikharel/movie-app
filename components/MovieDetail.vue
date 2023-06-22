@@ -1,11 +1,11 @@
 <template>
     <div class="grid sm:grid-cols-3 gap-7 m-10">
         <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img class=" w-full object-cover" :src="poster" alt="Placeholder Image"/>
+            <img class=" w-full object-cover" :src="`https://image.tmdb.org/t/p/w300`+ poster" alt="Placeholder Image"/>
        </div>
        <div class="sm:col-span-2 mx-6">
         <h1 class="font-bold text-2xl mb-5">{{ title }}</h1>
-        <h3 class="font-semibold text-lg mb-5">Release Date: {{ date }}</h3>
+        <h3 class="font-semibold text-lg mb-5">Release Date: {{ release_date }}</h3>
         <p class="text-gray-500 text-md mb-8"> {{ overview }} </p>
         <p class="text-gray-500 text-md">Revenue: $ {{ revenue }}</p>
         <div class="mt-6">
@@ -17,7 +17,7 @@
 </template>
 
 <script setup>
-    defineProps(["title", "date", "poster", "revenue", "overview"]);
+    defineProps(["title", "release_date", "poster", "revenue", "overview"]);
     
 </script>
 
