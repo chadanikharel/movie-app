@@ -1,6 +1,6 @@
 <template>
     <div>
-        <MovieDetail :title="movie.title" :release_date="movie.release_date" :poster="movie.poster_path" :revenue="movie.revenue" :overview="movie.overview" />
+        <MovieDetail :movie="movie"/>
     </div>
 </template>
 

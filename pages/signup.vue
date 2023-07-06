@@ -20,7 +20,7 @@
                         </div>
                         <button type="submit" class="w-full text-white bg-cyan-900 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign Up</button>
                         <p class="text-sm font-medium text-gray-800 dark:text-gray-400">
-                        Already have an account ? <NuxtLink to="/login" class=" font-bold text-primary-600 hover:underline dark:text-primary-500">Sign in</NuxtLink>
+                        Already have an account ? <NuxtLink to="/login" class="font-bold text-primary-600 hover:underline dark:text-primary-500">Sign in</NuxtLink>
                         </p>
                     </form>
                 </div>

@@ -2,15 +2,14 @@
     <div>
         <NuxtLayout>
             <NuxtPage />
-        </NuxtLayout>
-       
+        </NuxtLayout> 
     </div>
 </template>
 
 <script setup>
-
+    
 </script>
 
-<style  scoped>
+<style scoped>
 
 </style>
