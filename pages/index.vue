@@ -10,7 +10,7 @@
     </div>
 </template>
 
-<script  setup>
+<script setup>
 
     const movies =  ref([]);
     // fetch all movies from moviedb api

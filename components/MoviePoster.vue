@@ -15,10 +15,10 @@
     </div>
 
 </template>
-
-<script setup>
-
-defineProps(['movie']);
+    
+<script lang="ts" setup>
+    import {Movie} from '@/types/types'
+    defineProps<{movie:Movie}>();
 
 
 </script>
